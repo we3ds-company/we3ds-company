@@ -1,0 +1,12 @@
+README.md
+LICENSE
+.env.example
+.gitignore
+CONTRIBUTING.md
+SECURITY.md
+.github/
+    workflows/
+    ISSUE_TEMPLATE/
+    pull_request_template.md
+docs/
+tests/
