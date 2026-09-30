@@ -6,9 +6,9 @@ Thank you for your interest in contributing to WE3DS projects. This guide explai
 
 ## 📋 Before You Start
 
-- Check the existing [Issues](../../issues) to see if your idea or bug is already being tracked
+- Check the existing [Issues](https://github.com/we3ds-company/we3ds-company/issues) to see if your idea or bug is already being tracked
 - For major changes, open an issue first to discuss the proposal before writing code
-- Read our [Standards](./Standards.md), [Code Quality](./Code-Quality.md), and [Workflow](./Workflow.md) documents
+- Read our [Standards](./docs/Standards.md), [Code Quality](./docs/Code-Quality.md), and [Workflow](./docs/Workflow.md) documents
 
 ---
 
@@ -103,7 +103,7 @@ npm run test              # Frontend
 - **Never** commit secrets, credentials, or API keys
 - If you discover a security vulnerability, **do not open a public issue**
 - Report it privately to: [info@we3ds.com](mailto:info@we3ds.com)
-- See [SECURITY.md](./SECURITY.md) for our full security policy
+- See [SECURITY.md](./.github/SECURITY.md) for our full security policy
 
 ---
 

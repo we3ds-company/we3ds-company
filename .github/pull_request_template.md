@@ -39,7 +39,7 @@
 ## ✔️ PR Checklist
 
 ### Code Quality
-- [ ] Code follows WE3DS [Code Quality Standards](../Code-Quality.md)
+- [ ] Code follows WE3DS [Code Quality Standards](../docs/Code-Quality.md)
 - [ ] Business logic is in Services, not Controllers
 - [ ] No N+1 database queries introduced
 - [ ] Input is validated and sanitized

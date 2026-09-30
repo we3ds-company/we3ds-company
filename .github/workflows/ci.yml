@@ -5,8 +5,36 @@ on:
     branches: [main, develop]
   pull_request:
     branches: [main, develop]
+  workflow_dispatch:
 
 jobs:
+  # ─── Documentation & Repository Integrity ──────────────────────────────────
+  docs-check:
+    name: Documentation & Repository Integrity
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Verify Core Documentation Files
+        run: |
+          echo "Validating core company documentation files..."
+          test -f README.md || (echo "README.md missing" && exit 1)
+          test -f CONTRIBUTING.md || (echo "CONTRIBUTING.md missing" && exit 1)
+          test -f CODE_OF_CONDUCT.md || (echo "CODE_OF_CONDUCT.md missing" && exit 1)
+          test -f LICENSE || (echo "LICENSE missing" && exit 1)
+          test -f CHANGELOG.md || (echo "CHANGELOG.md missing" && exit 1)
+          test -f ROADMAP.md || (echo "ROADMAP.md missing" && exit 1)
+          test -d docs || (echo "docs directory missing" && exit 1)
+          test -f docs/README.md || (echo "docs/README.md missing" && exit 1)
+          test -f docs/Standards.md || (echo "docs/Standards.md missing" && exit 1)
+          test -f docs/Workflow.md || (echo "docs/Workflow.md missing" && exit 1)
+          test -f docs/Code-Quality.md || (echo "docs/Code-Quality.md missing" && exit 1)
+          test -f docs/Security.md || (echo "docs/Security.md missing" && exit 1)
+          test -f docs/Frontend.md || (echo "docs/Frontend.md missing" && exit 1)
+          test -f docs/Audit.md || (echo "docs/Audit.md missing" && exit 1)
+          echo "All core documentation and repository standard files are present and verified."
   # ─── PHP / Laravel ───────────────────────────────────────────────────────────
   laravel:
     name: Laravel CI

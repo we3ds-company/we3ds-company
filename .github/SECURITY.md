@@ -54,7 +54,7 @@ We appreciate responsible disclosure. If you report a valid, previously unknown 
 
 ## 🔐 Our Security Practices
 
-For a full description of our internal security standards, see [Security.md](../Security.md).
+For a full description of our internal security standards, see [Security.md](../docs/Security.md).
 
 Key principles:
 - Secrets and credentials are never stored in source code
